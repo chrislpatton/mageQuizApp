@@ -135,7 +135,7 @@ correctAnswer: ["2"]
 }, {
     question:"In which table could you find the order state? answer a",
     choices:["sales_flat_order", "sales_flat_order_state", "sales_flat_order_status","sales_flat_order_status_history"],
-    correctAnswer["0"]
+    correctAnswer:["0"]
 }, {
     question:"Which two of the following methods can be used to loas an entity's data from its configured data table? (choose two) answer b,e",
     choices:["$entityModel->:loadEntity($id)", "$entityModel->load($attributeValue, $attributeCode)","$entityModel->loadBy($id)","$entityModel->loadEntity($attributeCode,$attributeValue)","$entityModel->load($id)"],
