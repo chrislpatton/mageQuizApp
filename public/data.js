@@ -78,5 +78,43 @@ correctAnswer: ["2"]
     question: "Which of the following action will enable logging via calls to debugData() on a native Magento payment method model? answer d",
     choices: ["Set the protected property $_debug of the payment model to true", "Set the config node default/payment/debug/[method code] to 1", "Call Mage::register ('payment_method_debug_'.[method code], true", "Set the config node default/payment[method code]/debug to 1", "Call setDebug(true) on the payment method model"],
     correctAnswer:["3"]
+}, {
+    question: "Which two public methods must be implemented in a functional custom shipping method directly extending Mage_Shipping_Model_Carrier_Abstract and also implementing Mage_Shipping_Model_Carrier_Interface? (Choose two) answer a,b",
+    choices: ["collectRates()", "getAllowedMethods()","isTrackingAvailable()","isFixed()", "getConfigData()","checkAvailableShipCountries()"],
+    correctAnswer: ["0","1"]
+}, {
+    question: "Which of the following is the default setup script class name? answer d",
+    choices: ["Mage_Core_Model_Mysql4_Setup","Mage_Core_Model_Resource_Setup_Default", "Mage_Setup_Model_Resource_Default", "Mage_Core_Model_Resource_Setup"],
+    correctAnswer: ["3"],
+}, {
+    question: "You need to implement private sales utilizing Website Restrictions as provided by the Enterprise Edition of Magento, and when customers are not logged in, you want them to be redirected to a landing page. Where in the Magento admin would you find the settings needed for this task? answer b",
+    choices: ["System->Confiuration->Enterprise->Website Restrictions", "System->Configuration->General->Website Restrictions","System->Manage Stores->Edit Website", "System->Permissions->Website Restrictions"],
+    correctAnswer: ["1"],
+}, {
+    question: "Assume that PayPal has presented a new API for online purchasing that you are going to use. Which class should you extend for doing that? answer c",
+    choices:["Mage_Sales_Model_Quote_Payment", "Mage_Payment_Model_Info","Mage_Payment_Model_Method_Abstract", "Mage_Sales_Model_Order_Payment"],
+    correctAnswer:["2"]
+}, {
+    question: "To update your order information from a third-party-system using an XmlRpc call, you should _______. answer a",
+    choices:["Use the native sales_orde.update /API call with teh url /api/xmlrpc/", "Create a custom API resource which allows you to receive XmlRpc requests", "Create a custom API adapte to receive XmlRpc requests", "Create a custon API handler to process XmlRpc requests"],
+    correctAnswer:["0"]
+}, {
+    question: "Inside the XML node config/global/blocks, what is teh correct xpath for rewriting the catalog/product_view block? answer e",
+    choices: ["catalog/rewrite/product/view", "catalog_product/rewrite/view", "catalog/product/rewrite/view","catalog/rewrite/product_view","catalog_product_view/rewrite"],
+    correctAnswer: ["4"],
+}, {
+    question:"When the load method is called on an Eav-based data model, which of the following occurs before the load method returns? answer c",
+    choices:["walkAttributes is used to call load on the backend model of each attribute to load its corresponding value.", "_afteLoad is called on the source model of each loaded attribute that has one", "walkAttributes is used to call afteLoad on the backend model of each loaded attribute that has one", "walkAttributes is used to iterate over each attribute and load its data from teh correct table on the database"],
+    correctAnswer: ["2"],
+}, {
+    question: "In which of the followin integrations should you use the Magento API? answer b",
+    choices: ["to send a SOAP request from Magento to a third-party-system", "to receive a SOAP request from a third-party-system to  Magento", "to send or receive SOAP requests in Magento", "to provide tracking on the order success page"],
+    correctAnswer: ["1"]
+}, {
+    question: "You need to override the default value for the expiry calculation for reward point is used by teh Reward Points module. Which of the following XML fragements should you use in your modules config.xml? answer a",
+    choices: ["default/enterprise_reward/general/expiry_calculation with a value of static", "default/enterprise_reward/general/expiry with a value of static", "default/reward_points/general/expiry_calculation with a value of static","default/enterprise_reward/expiry_calculation with a value of static"],
+    correctAnswer: ["0"]
+}, {
+    
 }
 ];
