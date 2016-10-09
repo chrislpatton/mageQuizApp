@@ -115,6 +115,115 @@ correctAnswer: ["2"]
     choices: ["default/enterprise_reward/general/expiry_calculation with a value of static", "default/enterprise_reward/general/expiry with a value of static", "default/reward_points/general/expiry_calculation with a value of static","default/enterprise_reward/expiry_calculation with a value of static"],
     correctAnswer: ["0"]
 }, {
-    
+    question: "Which one of the following EAV attribute types may be used for layered navigation in native Magento? answer c",
+    choices:["Varchar","Enum", "Option","Union"],
+    correctAnswer: ["2"]
+}, {
+    question: "Which two of the following parameters are necessary to define a usable massaction item? answer a,d",
+    choices: ["label","value", "additional", "url", "confirm"],
+    correctAnswer: ["0","3"]
+
+}, {
+    question:"What happens when you edit an exsisting order using the order management page? answer d",
+    choices: ["A form appears that allows you to edit all information on the current order", "A form appears that allows you to edit shipping information of the current order only","Depending on the order status, different editing forms appear for the current order",
+    "The current order is canceled and a new order is created from scratch based on the current order's data"],
+    correctAnswer:["3"],
+}, {
+    question: "which two of the following will return an instance of a block object? (Choose two) answer d,f",
+    choices:["Mage::getBlock('page/html_header');", "Mage::app()->createBlock('page/html_header';", "Mage::createBlock('page/html_header';","Mage::app()->getLayout()->createBlock('page/html_header');","Mage::getLayout()->createBlock('page/html_header');","Mage::app()->getLayout()->createBlock('page/html_header')->setTemplate('page/html/header=phtml');"],
+    correctAnswer: ["3","5"],
+}, {
+    question:"In which table could you find the order state? answer a",
+    choices:["sales_flat_order", "sales_flat_order_state", "sales_flat_order_status","sales_flat_order_status_history"],
+    correctAnswer["0"]
+}, {
+    question:"Which two of the following methods can be used to loas an entity's data from its configured data table? (choose two) answer b,e",
+    choices:["$entityModel->:loadEntity($id)", "$entityModel->load($attributeValue, $attributeCode)","$entityModel->loadBy($id)","$entityModel->loadEntity($attributeCode,$attributeValue)","$entityModel->load($id)"],
+    correctAnswer:["1","4"]
+}, {
+    question:"In order to successsfully register and configure a new entity capable of being saved and loaded from the database, you must create a model and which three of the following? (choose three) answer b,e,f",
+    choices: ["collection class","Cofiguration settings in your module's config-xml", "An entry in Mage::$_registry","A record in the eav_entity table", "A resource model", "A table in the database that will store the entity's data"],
+    correctAnswer:["1","4","5"]
+}, {
+    question: "Which object never encapsulates any shopping cart items? answer b", 
+    choices: ["Mage_Checkout_Model_Cart", "Mage_Sales_Model_Quote", "Mage_Sales_Model_Quote_Address</type=shipping>","Mage_Sales_Model_Quote_Address<type-billing>"],
+    correctAnswer:["1"]
+}, {
+    question: "Which table is used for calculating a new increment ID for an order? answer b",
+    choices:["sales_flat_order_increment","eav_entity_store","core_increment","core_config_data"],
+    correctAnswer: ["1"]
+}, {
+    question: "How many items will be added to the quote after adding a configurable product to the shopping cart? answer d",
+    choices: ["The number of options", "The number of options+1", "Always 1", "Always 2"],
+    correctAnswer: ["3"]
+}, {
+    question: "Which three of the following statments accurately describe the differences between EAV and flat catalogs when accessing child categories of a category? (Chooses three) answer a,b,d",
+    choices: ["A different method must be used to get the child categories if flat catalog is enabled",
+    "the type of the results differs between EAV and flat catalog", "Results also include children of children if flat catalog is enabled","Results contain more information for each child if flat catalog is disabled", "The children's ID's of EAV and flat tables are different"],
+    correctAnswer:["0","1","3"]
+}, {
+    question:"Which two of the following are supported in the native Magento API? (choose two) answer b,e",
+    choices:["Partial void", "Partial invoice", "Partial capture", "Partial refund", "Partial shipment"],
+    correctAnswer: ["1","4"]
+}, {
+    question: "Which one of the following API methods exists in Magento? answer d", 
+    choices: ["catalog_category.save", "catalog_product.items","catalog_product_attribute_set.update","catalog_product.info"],
+    correctAnswer: ["3"],
+}, {
+    question: "Which module is responsible for Store Credit functionality in the native Magento? answer b",
+    choices:["Enterprise/StoreCredit","Enterprise/CustomerBalance", "Enterprise/Sales","Enterprise/Customer"],
+    correctAnswer: ["1"]
+}, {
+    question: "You want to implement a custom attribute source model. Which method do you have to implement after extending Mage_Eav_Model_Attribute_Source_Abstract? answer b",
+    choices:[:"getOptionText()","getAHOptions()","getOptionsHash()","getOptionId()"],
+    correctAnswer:["1"]
+}, {
+    question:"Which of these xmlelements are used in system.xml to configure a system configuration propery?(choose four) answer a,c,d,f",
+    choices:["backend_model","admin_model","frontend_model","source_model","source_type","show_in_store"],
+    correctAnswer:["0","2","3","5"]
+}, {
+    question:"How is the sort order in which total models collect their values specified? answer a",
+    choices: ["The sort order is specified in the admin configuration under Sales>'Checkout Totals Sort Order","The sort order is specified in the system configuration under globals/sales/quote/totals/[total_code] with <before>and <after> nodes","The sort order is defined by the module loading order as specified by the children of the modules/[module_name]/depends configuration node","The sort order is specified by the collect method in each total model"],
+    correctAnswer:["0"]
+}, {
+    question:"Which of the following allows you to save a single attribute value on an EAV entity? answer c",
+    choices:["$model->saveAttribute($attributeCode);","$model->save(SattributeCode);","$model->getResource()->saveAttribute($model, SattributeCode);","$model->getResource()->save($model, $attributeCode);"],
+    correctAnswer:["2"]
+}, {
+    question:"Which method is called on a shipping carrier model to fetch a list of all available shipping methods, along with the rates associated with them, for a quote address? answer e",
+    choices:["collectShippingRates()","getAllowedMethods()","getShippingRates()","getAvailableRates()","collectRates()"],
+    correctAnswer:["4"]
+}, {
+    question:"Which three of the following conditions should exclude a quote item from the shipping rate calculation by a carrier model? (Choose three) answer a,b,d",
+    choices:["$quoteItem->getFreeShipping() == true","$quoteltem->getProduct()->isvirtual() == true", "$quoteltem->getweight() > 0","$quoteItem->isShipSeparately() && SquoteItem->getHasChildren()","$quoteItem()->getQty() < Mage::getStoreConfig('carriers/tablerate/min_shipping_qty')"],
+    correctAnswer:["0","1","3"]
+}, {
+    question:"What class does an adminhtml grid directly extend? answer a",
+    choices:["Mage_Adminhtml_Block_Widget","Varien_Data_Grid","Varien_Data_Widget","Mage_Adminhtml_Block_Template"],
+    correctAnswer:["0"]
+}, {
+    question: "For an attribute to be loaded on a catalog/product object, which two of the following conditions must be satisfied? answer a,c",
+    choices:["The eav_attribute table must contain a row defining the attribute's properties and its entity type.","The attribute must have a backend model configured in the XML config.","The attribute must be part of the attribute set pertaining to the object being loaded.","There must be a record of the attribute on the catalog_product_super_atti:ibute table,","There must be a column added to the catalog_product_entity table."],
+    correctAnswer:["0","2"]
+}, {
+    question:"You want to define a list of quote object attributes that are copied to the order object when an order is placed. Which one of the following statements is true? answer a",
+    choices: ["You can define this list by modifying the list of elements found in the configuration with the xpath global/fieldsets/sales_convert_quote.","You can define this list by modifying the list of elements found in the configuration with the xpath","global/sales/quote/item/product_attributes.","You can define this list by checking the checkbox on the attribute edit page in the admin.","You cannot modify the list of fields copied from quote to order because the process is hardcoded."],
+    correctAnswer:["0"]
+}, {
+    question:"Whic two EAV attribute frontend_input types make use of source models? answer c,d",
+    choices:["Text","Textarea","Select","multiselect","Date","Gallery"],
+    correctAnswer:["2","3"]
+}, {
+    question: "Which one of the following class types directly charges a credit card when you capture an invoice in Magento admin? answer d",
+    choices:["order","payment","invoice","payment_method"],
+    correctAnswer:["3"]
+}, {
+    question:"A customer has complained that his reward points sum is inaccurate. In order to debug what has happened and to discover when changes were made to his reward points, where should you look for logging information? answer a",
+    choices:["Database table enterprise_reward_history","Database table enterprise_reward","Log file var/log/system.log","Database table enterprise_reward_log"],
+    correctAnswer:["0"]
+}, {
+    question: "Which table stores information about the relationship between configurable products and their child products? answer b",
+    choices: ["catalog_product_link","catalog_product_super_link","catalog_product_option","catalog_product_relation"],
+    correctAnswer:["1"]
 }
 ];
