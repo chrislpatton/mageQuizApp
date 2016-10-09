@@ -175,7 +175,7 @@ correctAnswer: ["2"]
     correctAnswer: ["1"]
 }, {
     question: "You want to implement a custom attribute source model. Which method do you have to implement after extending Mage_Eav_Model_Attribute_Source_Abstract? answer b",
-    choices:[:"getOptionText()","getAHOptions()","getOptionsHash()","getOptionId()"],
+    choices:["getOptionText()","getAHOptions()","getOptionsHash()","getOptionId()"],
     correctAnswer:["1"]
 }, {
     question:"Which of these xmlelements are used in system.xml to configure a system configuration propery?(choose four) answer a,c,d,f",
