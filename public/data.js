@@ -225,5 +225,56 @@ correctAnswer: ["2"]
     question: "Which table stores information about the relationship between configurable products and their child products? answer b",
     choices: ["catalog_product_link","catalog_product_super_link","catalog_product_option","catalog_product_relation"],
     correctAnswer:["1"]
+},
+{
+    question:"Which statement describe a model class that extends Mage_Core_Model_Abstract? answer a",
+    choices:["The model class consists of properties and methods for storing  and manipulating data retrieved via seperate resource classes responsible for database operations.","The model class is responsible for loading the frontend layout templates and responding to page requests via its Action methods (for example, indexAction).", "The model class does not encapsulate any logic providing access to the data loaded from the database","The model class is primarily responsible for direct query operations such as retrieving and storing data and then rendering that data to the frontend view."],
+    correctAnswer:["0"]
+},
+{
+    question:"Which one of the following is responsible for sending a remote request to the payment service when capturing an order? answer c",
+    choices:["Payment Info","Order Payment","Payment Method","Invoice"],
+    correctAnswer:["2"]
+},
+{
+    question:"Which of the following lines includes a payment method object? answer c",
+    choices:["$dquote->getShippingAddress()->setPaymentMetod(isset($data['method']? $data['method']:null); inside Mage_Checkout_Model_Type_Onepage",".public function setPayment(Mage_Sales_Model_Quote_Payment $payment) inside Mage_Sales_Model_Quote","$method = $this->getMethodInstance(); inside Mage_Sales_Model_Quote_Payment","$instance->set!nfoInstance($this); inside Mage_Payment_Model_Info"],
+    correctAnswer:["2"]
+},
+{
+    question:"Which class is extended to render a dropdown in admin forms? answer e",
+    choices:["Mage_Adminhtml_Block_Widget","Mage_Core_Block_Abstract","Mage_Adminhtml_Block_Form_Abstract","Mage_Core_Block_Template","Varien Data Form Abstract"],
+    correctAnswer:["4"]
+}, 
+{
+    question:"Which of the following is a true statement about how Magento loads data for an Eav-based data model? answer b",
+    answers:["A data helper is used in order to properly load an objects attributes from the database", "EAV-based data models use a different abstract class than other data models", "The attribute values are loaded into an attribute collection object","You must always specify each of the attributes to be loaded on the model"],
+    correctAnswer:["1"]
+},
+{
+    question:"Which class should you refer to troubleshoot Website restriction issues? answer d",
+    choices:["Enterprise_WebsiteRestrictions_Model_Restriction","Enterprise_WebsiteRestrictions_Helper_Data","Enterprise_WebsiteRestrictions_Model_Mysql4_Restriction",
+    "Enterprise_WebsiteRestrictions_Model_Observer"],
+    correctAnswer:["3"]
+},
+{
+    question:["Which of the following options would cause a poll/poll collection to load all entities that have been posted during April, 2011? answer b"],
+    choices:["$collection->addAttributeToFilter('date_posted', array('from' => '2011-04-01', 'to' => '2011-04-30') );", "$collection->addFieldToFilter('date_posted', array('from' => '2011-04-01', 'to' => '2011-04-30') );","$collection->addPostDateFilter('2011-04-01', '2011-04-30');","$collection->addFieldToSelect(('date_posted',arrayCfrom' => '2011-04-01', 'to' => '2011-04-30'));"],
+    correctAnswer:["1"]
+},
+{
+    question:"Given a grid interface that extends from Mage_Adminhtml_Block_Widget_Grid, which of the following methods could you override to allow data to be loaded from a custom data collection? answer b",
+    choices:["_prepareDataModel","_prepareCollection","_initDataModel","_initGrid"],
+    correctAnswer:["1"]
+},
+}{
+    question:"How can you make a payment method store entire credit card numbers? answer c",
+    choices:["For security reasons, there are no native ways for doing that.","Pass the credit card number to the payment method: it will be stored automatically.","Change the protected property of payment method $_canSaveCc to true.","Configure your method to save the card number by setting 1 to the following xpath: default/payment/_NAME_/save_cc"],
+    correctAnswer:["2"]
+},
+{
+    question:"The final price for the product on the product view page is__________. answer d",
+    choices:[" taken from the catalog_product_index_price table","taken from the catalog_product_index_price_idx table","taken from the catalog_product_index_price_final_idx table","calculated on-the-fly on php-level","pre-calculated in the products price attribute"],
+    correctAnswer:["3"]
 }
 ];
