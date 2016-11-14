@@ -385,6 +385,50 @@ choices:["A. in the sales_flat_quote table, as a serialized string in a text fie
 "C. in a separate table, sales_flat_quote_item_option",
 "D. Magento doesn't store persistent data about custom options; only the new price and new SKU are stored."],
 correctAnswer:["2"]
+},
+{
+   question:"By enabling Flat catalog, you will _____________.",
+   choices:["Speed up performance on the frontend","Speed up saving product on the backend","Simplify the product import process","Speed up loading product on the backend"],
+   correctAnswer:["0"] 
+},
+{
+   question:"What do you need to do to implement a completely new Web Service protocol in Magento?",
+   choices:["Create your own adapter and controller","Create your own API resource.","Create a new API helper.","Create a new model extended from Mage_Api_Model_Abstract."],
+   correctAnswer:["0"] 
+},
+{
+   question:"What event do Website Restrictions use to restrict access?",
+   choices:["controller_front_init_before","controller_action_predispatch","controller_front_send_response_before","controller_action_layout_load_before"],
+   correctAnswer:["1"] 
+},
+{
+    question:"Given an EAV-based data model whose data is stored in the table foo_entity, in which table wouldyou find the values for an attribute of the varchar type?",
+    choices:["foo_entity_attribute_storage","foo_entity_varchar","entity_attribute_varchar","foo_entity"],
+    correctAnswer:["1"]
+},
+{
+    question:"How can you update a third-party system with every new order created in Magento?",
+    choices:["Use the native sales_order.update API call","Use a sales_order_place_after API call.","Create an observer in Magento on the sales_order_place_after event.","Customize the third-party system to listen to Magento's sales_order_place_after event."],
+    correctAnswer:["2"]
+},
+{
+    question:"How are 'Rule-based related products' added to the shopping cart when you check their checkbox together with the checkbox for the basic product?",
+    choices:["As the basic product's custom options","Separately from the basic product"," As the basic product's configuration options","As a single grouped product"],
+    correctAnswer:["1"]
+},
+{
+    question:"What is the basic class/interface for every model observer class?",
+    choices:["Mage_Model_Config_Observer","Mage_Core_Model_Event_Observer_Abstract","Mage_Core_Model_Event_Observer_Interface","There is no required inheritance.","Varien_Object"],
+    correctAnswer:["3"]
+},
+{
+    question:"Assume you have saved a product in the Catalog. Will your last changes be taken into account for rule-based related products?",
+    choices:[" Only if you go to the 'Catalog/Rule-based Product Relations' page, and hit 'Reindex All' button", "Only if you clear the cache","Yes: It will be done automatically by an observer on the catalog_product_save_after event.","Yes: Rule-based related products are calculated on-the-fly."],
+    correctAnswer:["2"]
+},
+{
+question:"What is the xpath to the list of product types?",
+choices:["Catalog/product/type","Global/catalog/product/type","Default/catalog/product/type","It depends on the product type"],
+correctAnswer:["1"]
 }
-
 ];
