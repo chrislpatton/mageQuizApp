@@ -276,5 +276,100 @@ correctAnswer: ["2"]
     question:"The final price for the product on the product view page is__________. answer d",
     choices:[" taken from the catalog_product_index_price table","taken from the catalog_product_index_price_idx table","taken from the catalog_product_index_price_final_idx table","calculated on-the-fly on php-level","pre-calculated in the products price attribute"],
     correctAnswer:["3"]
+}, 
+{
+    question:"Which of the following items is NOT utilized in Magentos implementation of EAV-based data models? answer c",
+    choices:["An entity table for storing the entities' basic information","One or more tables to store the entities' associated pieces of information","A two-column cross-link table to associate attribute values with a corresponding entity","Foreign keys on each relevant table to connect relevant pieces of information at the database level"],
+    correctAnswer:["2"] 
+},
+{
+    question:"What is the difference between the base grand total and grand totla attributes of the order? answer d",
+    choices:["base_grand_total is a grand total is the grand totla after tax is applied","base_grand_total is the grand at the moment of order submission; grand_total is the grand total at the moment of order closing","base_grand_total is the grand total in the currency of the store where the order was submitted; grand_total is in US dollars always","base_grand_total is in a base currency and grand_total is in the currency of the website where the order was submitted"],
+    correctAnswer:["3"]
+},
+{
+    question: "When the Magento configuration is being loaded, all the XML files in app/etc and the module registration files under app/etc/modules/ are loaded first. After that step, in which order are the following items loaded? 1. Configuration from the core_config_data DB table 2. app/etc/local.xml 3. The etc/config.xml of all active modules answer c" ,
+    choices:["1,3,2","3,1,2","3,2,1","1,2,3"],
+    correctAnswer:["2"]
+},
+ {   question: "Which one of the following controller classes could respond to this URL?:http://example.com/modulename/controller/index answer d" ,
+    choices:["Namespace_Module_IndexConrollet:","Namespace_ModuleName_Controller_ControllerIndex","Namespace_ModuleName_Controller_IndexController","Namespace_Modulename_ControllerController"],
+    correctAnswer:["3"]
+}, 
+{
+    question:"Which one of the following API protocols does natve Magento support? answer a",
+    choices:["XmlRpc","REST","POST","Open Social","XQuery"],
+    correctAnswer:["0"]
+},
+{
+    question:"Which of the following accurately describes the parent class of all EAV-based resource models? answer d",
+    choices:["Mage_Eav_Model_Mysql4_Abstract","Mage_Core_Model_Mysql4_Abstract","Mage_Eav_Model_Abstract","Mage_Eav_Model_Entity_Abstract"],
+    correctAnswer:["3"]
+},
+{
+    question:"When you register an event observer, which two of the following pieces of information are required to function? answer a and c",
+    choices:["Method (or function) name","Method (or function) arguments","Class name","Object type (singleton,model,none,etc.)","Call order","Active/inactive status"],
+    correctAnswer:["0,2"]
+},
+{    question:"What does Magento use to determine wheter the automatically run upgrade scripts have been run yet? answer c",
+    choices:["The modification date on the modules etc/config.xml file","The version number (or loack thereof) stored in the core_module_version table","The version number (or lack thereof) stored in teh core_resource table","A comparison of the resources that are capable of successfully loading"],
+    correctAnswer:["2"]
+},
+{
+    question:"Which one of the following classes must you extend in order to implement a custom indexer? answer d",
+    choices:["Mage_Eav_Model_Indexet:_Abstract","Mage_Cotre_Model_Entity_Indexer_Abstract","Mage_Index_Model_Entity_Indexer_Abstract","Mage_Index_Indexer_Abstract"],
+    correctAnswer:["3"]
+},
+{
+    question:"Custom widgets must _________  answer d",
+    choices:["Extend Varien_Object","Extend Mage_core_Block_Abstract","Extend Mage_Core_Block_Template","Implement Mage_Widget_Block_Interface","Implement Mage_Widget_Block_Interface and extend Mage_Core_Block_Abstract"],
+    correctAnswer:["3"]
+},
+{
+    question:"Which method is reponsible for a full re-index in the abstract Magento indexer? answer b",
+    choices:["fullReindex()","reindexAH()","processEven()","reindex()"],
+    correctAnswer:["1"]
+},
+{
+    question:"What can you do in orde to render a picture in a specific cell in a grid? answer c",
+    choices:["Create a custom cell renderer by extending Mage_Adminhtml_Block_Widget_Grid_Cell_Renderer_Abstract","Create a custom grid renderer by extending Mage_Adminhtml_Block_Widget_Grid_Renderer_Abstract","Create a custom column renderer by extending Mage_Adminhtml_Block_Widget_Grid_Column_Render_Abstract","Create a custom row render by extending Mage_Adminhtml_Blocl_Widget_Grid_Row_Renderer_Abstract"],
+    correctAnswer:["2"]
+},
+{
+    question:"Which file path correctly identifies the location of a module's install/upgradescripts inside the primary module directory? answer a",
+    choices:["sql/<setup_resource_name>/","var/scripts/","scripts/","<setup_resource_name>/"],
+    correctAnswer:["0"]
+},
+{
+    question:"You want to filter a product collection so that it will return only SKUs 12 and 123. You will use a call to $collection->addFieldToFilter('sku', ______________ ); Two of the following arrays could be used to complete that call correctly. Which two? (Choose two) answers b d",
+    choices:["array('sku' => 12, 'sku' => 123)","array(array('eq' => 12), array('eq' => 123))","array(12 => true, 123 => true)","array(12, 123)","array(array('int' => 12), array('int' => 123))"],
+    correctAnswer:["1,3"]
+},
+{
+    question:"Which of the following elements does NOT exist in system configuration xml (system, xml file)? answer d",
+    choices:["frontend_type","frontend_class","frontend_model","frontend_block"],
+    correctAnswer:["3"]
+},
+{
+    question:"to register a new API resource, what should you do? answer b",
+    choices:["Register your new resource in config.xml in the node global/api/ [module name]/resources.","Create etc/api.xml and register your resource in the api/resources node.","Go to the System/Web services/API Resources management page, and add a new resource from there","Create an etc/resources.xml config file and register your resource in the api/resources node."],
+    correctAnswer:["1"]
+},
+{
+
+question:"You need to create a new condition rule type. Which two of the following classes would be suitable candidates for extending? (Choose two) answer a c"
+choices:["Mage_CatalogRule_Model_Rule_Condition_Product",
+"Enterprise_CatalogRule_Model_Rule_Condition_Product",
+"Enterprise_TargetRule_Model_Rule_Condition_Product_Attributes","Mage_TargetRule_Model_Rule_Condition_Product_Attributes",
+"Enterprise_TargetRule_Model_Rule_Condition_Rule"],
+correctAnswer:["0","2"]
+},
+{
+    question:"Which one of the following statements is true regarding layout update handles? answer d",
+choice:["Layout update handles must always match a module_controller_action pattern such as catalog_product_view.",
+"There may never be more than one layout update handle per request.",
+"Layout update handles are declared at any level of the layout XML hierarchy.",
+"A layout update handle may be specified as a string argument when calling loadLayout ()"],
+correctAnswer:["3"]
 }
 ];
