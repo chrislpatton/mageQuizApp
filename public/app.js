@@ -38,6 +38,7 @@ $(document).ready(function () {
                 currentQuestion++; // Since we have already displayed the first question on DOM ready
                 if (currentQuestion < questions.length) {
                     displayCurrentQuestion();
+                    displayScore();
                 } else {
                     displayScore();
                     //                    $(document).find(".nextButton").toggle();
