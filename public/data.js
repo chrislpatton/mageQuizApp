@@ -267,7 +267,7 @@ correctAnswer: ["2"]
     choices:["_prepareDataModel","_prepareCollection","_initDataModel","_initGrid"],
     correctAnswer:["1"]
 },
-}{
+{
     question:"How can you make a payment method store entire credit card numbers? answer c",
     choices:["For security reasons, there are no native ways for doing that.","Pass the credit card number to the payment method: it will be stored automatically.","Change the protected property of payment method $_canSaveCc to true.","Configure your method to save the card number by setting 1 to the following xpath: default/payment/_NAME_/save_cc"],
     correctAnswer:["2"]
