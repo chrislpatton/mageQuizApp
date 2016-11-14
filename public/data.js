@@ -357,7 +357,7 @@ correctAnswer: ["2"]
 },
 {
 
-question:"You need to create a new condition rule type. Which two of the following classes would be suitable candidates for extending? (Choose two) answer a c"
+question:"You need to create a new condition rule type. Which two of the following classes would be suitable candidates for extending? (Choose two) answer a c",
 choices:["Mage_CatalogRule_Model_Rule_Condition_Product",
 "Enterprise_CatalogRule_Model_Rule_Condition_Product",
 "Enterprise_TargetRule_Model_Rule_Condition_Product_Attributes","Mage_TargetRule_Model_Rule_Condition_Product_Attributes",
